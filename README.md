@@ -7,7 +7,7 @@ This project implements a full autonomous robotics pipeline within the ROS2 fram
 A mobile robot navigates a pre-mapped environment, visiting a sequence of waypoints while
 continuously analysing its camera feed for coloured objects. Upon detecting a blue target,
 it cancels active navigation, performs a local sweep scan if needed, and switches to a
-proportional visual-serving controller to approach and stop at the target. The implementation
+proportional visual-servoing controller to approach and stop at the target. The implementation
 integrates the Nav2 action stack, OpenCV HSV colour masking, and velocity control via ROS2
 topics — all within a single, well-structured Python node.
 
@@ -17,7 +17,7 @@ FEATURES
 - Real-time HSV colour detection with morphological noise filtering via OpenCV
 - Hue-wrap handling for accurate red detection across the 0/360 degree boundary
 - Local left-right sweep scanning at each waypoint to maximise target detection
-- Proportional visual-serving controller for smooth, clamped target approach
+- Proportional visual-servoing controller for smooth, clamped target approach
 - Live annotated camera display with bounding boxes, centroids, and detection summary
 
 TECHNOLOGIES
