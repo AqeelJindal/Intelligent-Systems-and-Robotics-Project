@@ -29,17 +29,6 @@ TECHNOLOGIES
 - Gazebo (TurtleBot3 simulation)
 - ament_python (ROS2 colcon build system)
 
-PROJECT STRUCTURE
------------------
-ros2_project_sc23aj2/
-├── ros2_project_sc23aj2/
-│   └── main.py       # Core node: ColourSearchNavigator
-├── map/
-│   ├── map.pgm       # Pre-built occupancy grid map of the task world
-│   └── map.yaml      # Map metadata (resolution, origin)
-├── package.xml       # ROS2 package manifest
-└── setup.py          # ament_python entry points
-
 GETTING STARTED
 ---------------
 This project runs inside a Singularity container provided by the COMP3631 module,
